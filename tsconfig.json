@@ -1,14 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "target": "es5",
-=======
-    "target": "ES2017",
->>>>>>> 7f29f71 (Initial commit from Create Next App)
-=======
-    "target": "es5",
->>>>>>> a2d4f62 (	modified:   .gitignore)
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -33,11 +25,3 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 7f29f71 (Initial commit from Create Next App)
-=======
-
->>>>>>> a2d4f62 (	modified:   .gitignore)
