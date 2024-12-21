@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # dependencies
 /node_modules
 /.pnp
@@ -16,6 +17,12 @@
 !.yarn/releases
 !.yarn/versions
 >>>>>>> 7f29f71 (Initial commit from Create Next App)
+=======
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+>>>>>>> a2d4f62 (	modified:   .gitignore)
 
 # testing
 /coverage
@@ -36,6 +43,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # local env files
 .env*.local
@@ -45,6 +53,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 >>>>>>> 7f29f71 (Initial commit from Create Next App)
+=======
+
+# local env files
+.env*.local
+>>>>>>> a2d4f62 (	modified:   .gitignore)
 
 # vercel
 .vercel
@@ -53,6 +66,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 7f29f71 (Initial commit from Create Next App)
+=======
+
+>>>>>>> a2d4f62 (	modified:   .gitignore)

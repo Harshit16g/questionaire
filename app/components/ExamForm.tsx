@@ -3,11 +3,27 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
+<<<<<<< HEAD
 import { Input } from "@/components/ui/input"
+=======
+>>>>>>> a2d4f62 (	modified:   .gitignore)
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 
+<<<<<<< HEAD
+=======
+const popularExams = [
+  "SAT", "ACT", "GRE", "GMAT", "LSAT", "MCAT", "TOEFL", "IELTS",
+  "AP Biology", "AP Chemistry", "AP Physics", "AP Calculus",
+]
+
+const popularTopics = [
+  "Mathematics", "Physics", "Chemistry", "Biology", "History", "Literature",
+  "Computer Science", "Economics", "Psychology", "Political Science",
+]
+
+>>>>>>> a2d4f62 (	modified:   .gitignore)
 export default function ExamForm() {
   const [exam, setExam] = useState('')
   const [topic, setTopic] = useState('')
@@ -18,6 +34,13 @@ export default function ExamForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError(null)
+<<<<<<< HEAD
+=======
+    if (!exam || !topic) {
+      setError('Please select both an exam and a topic')
+      return
+    }
+>>>>>>> a2d4f62 (	modified:   .gitignore)
     try {
       console.log('Submitting form with:', { exam, topic, difficulty });
       router.push(`/?exam=${encodeURIComponent(exam)}&topic=${encodeURIComponent(topic)}&difficulty=${difficulty}`)
@@ -35,6 +58,7 @@ export default function ExamForm() {
     <form onSubmit={handleSubmit} className="space-y-4 mb-8">
       <div className="space-y-2">
         <Label htmlFor="exam">Exam Name</Label>
+<<<<<<< HEAD
         <Input
           id="exam"
           value={exam}
@@ -52,6 +76,35 @@ export default function ExamForm() {
           placeholder="Enter topic"
           required
         />
+=======
+        <Select value={exam} onValueChange={setExam}>
+          <SelectTrigger>
+            <SelectValue placeholder="Select an exam" />
+          </SelectTrigger>
+          <SelectContent>
+            {popularExams.map((examName) => (
+              <SelectItem key={examName} value={examName}>
+                {examName}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="topic">Topic</Label>
+        <Select value={topic} onValueChange={setTopic}>
+          <SelectTrigger>
+            <SelectValue placeholder="Select a topic" />
+          </SelectTrigger>
+          <SelectContent>
+            {popularTopics.map((topicName) => (
+              <SelectItem key={topicName} value={topicName}>
+                {topicName}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+>>>>>>> a2d4f62 (	modified:   .gitignore)
       </div>
       <div className="space-y-2">
         <Label htmlFor="difficulty">Difficulty</Label>
@@ -76,3 +129,7 @@ export default function ExamForm() {
   )
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a2d4f62 (	modified:   .gitignore)
